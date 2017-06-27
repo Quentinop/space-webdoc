@@ -27,10 +27,16 @@ body
 	display: inline-block;
 }
 
+.timeline-items
+{
+	transition: .2s all ease;
+}
+
 .timeline{
 	height: 40px;
 	line-height: 40px;	
 }
+
 
 .bar
 {

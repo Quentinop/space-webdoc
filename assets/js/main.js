@@ -83,19 +83,40 @@ chapters_btn.addEventListener('click', function(e) {
 
 var stars = document.querySelectorAll('.star');
 var bars = document.querySelectorAll('.bar');
-var items = document.querySelectorAll('.timeline-items');
+var timeline_items = document.querySelectorAll('.timeline-items');
 
 for(var i = 0; i < stars.length; i++)
 {
 	stars[i].addEventListener('click', function(e) 
 	{
-		console.log(e.target.id);
+		cleanTimeline()
 		this.style.width = '20px'
 		this.style.height = '20px'
 		this.style.transform = 'translateY(100%)'
-		items[parseInt(e.target.id)-1].style.transformOrigin = '0% 0%'
-		items[parseInt(e.target.id)-1].style.transform = 'rotate(10deg)'
-		items[parseInt(e.target.id)+1].style.transformOrigin = '100% 100%'
-		items[parseInt(e.target.id)+1].style.transform = 'rotate(-10deg)'
+
+		if(parseInt(e.target.id)-1 >= 0)
+		{
+			timeline_items[parseInt(e.target.id)-1].style.transformOrigin = '0% 0%'
+			timeline_items[parseInt(e.target.id)-1].style.transform = 'rotate(10deg)'
+		}
+		if(parseInt(e.target.id)+1 < timeline_items.length)
+		{
+			timeline_items[parseInt(e.target.id)+1].style.transformOrigin = '100% 100%'
+			timeline_items[parseInt(e.target.id)+1].style.transform = 'rotate(-10deg)'
+		}
 	});
+}
+
+function cleanTimeline()
+{
+	for(var i = 0; i < stars.length; i++)
+	{
+		stars[i].style.width = '10px'
+		stars[i].style.height = '10px'
+		stars[i].style.transform = 'translateY(50%)'
+	}
+	for(var i = 0; i < bars.length; i++)
+	{
+		bars[i].style.transform = 'rotate(0deg)'
+	}
 }
