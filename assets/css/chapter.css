@@ -1,12 +1,131 @@
+.section {
+  background-size: cover;
+  overflow: hidden;
+  
+}
+
+.slide {
+  background-size: cover;
+}
+
+#myVideo1 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-size: 100% 100%;
+  background-color: black;
+  /* in case the video doesn't fit the whole page*/
+  background-image: url(../assets/img/simulator.mp4);
+  background-position: center center;
+  background-size: contain;
+  object-fit: cover;
+  /*cover video background */
+  z-index: 3;
+}
+
+#myVideo2 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-size: 100% 100%;
+  background-color: black;
+  /* in case the video doesn't fit the whole page*/
+  background-image: url(../assets/img/Hubble.mp4);
+  background-position: center center;
+  background-size: contain;
+  object-fit: cover;
+  /*cover video background */
+  z-index: 3;
+}
+
+#myVideo3 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-size: 100% 100%;
+  background-color: black;
+  /* in case the video doesn't fit the whole page*/
+  background-image: url(../assets/img/telescope.mp4);
+  background-position: center center;
+  background-size: contain;
+  object-fit: cover;
+  /*cover video background */
+  z-index: 3;
+}
+
+#myVideo4 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-size: 100% 100%;
+  background-color: black;
+  /* in case the video doesn't fit the whole page*/
+  background-image: url(../assets/img/herschel.mp4);
+  background-position: center center;
+  background-size: contain;
+  object-fit: cover;
+  /*cover video background */
+  z-index: 3;
+}
+
+#myVideo5 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-size: 100% 100%;
+  background-color: black;
+  /* in case the video doesn't fit the whole page*/
+  background-image: url(../assets/img/curiosity.mp4);
+  background-position: center center;
+  background-size: contain;
+  object-fit: cover;
+  /*cover video background */
+  z-index: 3;
+}
+
 #chapter1 {
   background-image: url(https://www.nasa.gov/sites/default/files/thumbnails/image/iss044e008002_alt.jpg);
   position: relative;
+  text-align: center;
+}
+
+#chapter11 {
+  background-image: url(https://www.nasa.gov/sites/default/files/thumbnails/image/iss044e008002_alt.jpg);
+  position: relative;
+  text-align: center;
 }
 
 #chapter1,
 #chapter2,
 #chapter3,
-#chapter4 {
+#chapter4,
+#chapter5,
+#chapter6,
+#chapter7,
+#chapter8,
+#chapter9,
+#chapter10,
+#chapter11, {
   text-align: center;
 }
 
@@ -26,6 +145,14 @@
   z-index: 4;
 }
 
+.midRight {
+  position: absolute;
+  top: 50%;
+  right: 3%;
+  color: white;
+  z-index: 4;
+}
+
 .mid {
   position: absolute;
   bottom: 5%;
@@ -35,9 +162,11 @@
 }
 
 .topLeft {
+  color: white;
+  width: 40%;
   position: absolute;
   top: 5%;
-  left: 3%;
+  left: 30px;
   z-index: 4;
 }
 
@@ -49,7 +178,7 @@
 }
 
 #chapter2 {
-  background-image: url(http://www.history.com/s3static/video-thumbnails/AETN-History_VMS/21/205/tdih-oct04-HD.jpg);
+  /*  background-image: url(http://www.history.com/s3static/video-thumbnails/AETN-History_VMS/21/205/tdih-oct04-HD.jpg);*/
   background-position: right;
   position: relative;
   color: white;
@@ -72,28 +201,178 @@ video::-webkit-media-controls {
   overflow: hidden;
 }
 
-#myVideo {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  background-size: 100% 100%;
-  background-color: black;
-  /* in case the video doesn't fit the whole page*/
-  background-image: url(../img/sputnik.mp4);
-  background-position: center center;
-  background-size: contain;
-  object-fit: cover;
-  /*cover video background */
-  z-index: 3;
-}
-
 #chapter4 {
-  background-image: url(https://www.nasa.gov/sites/default/files/thumbnails/image/iss044e008002_alt.jpg);
   position: relative;
 }
 
+#chapter4 {
+  background-image: url();
+  position: relative;
+}
+
+#chapter5 {
+  background-size: cover;
+  position: relative;
+  
+}
+
+#slide1 {
+  background-image: url(../img/1.jpg);
+  background-size: 100%;
+  padding: 6% 0 0 0;
+  background-position: right;
+}
+
+#slide2 {
+  background-image: url(../img/2.jpg);
+  background-size: 100%;
+  padding: 6% 0 0 0;
+  background-position: bottom;
+}
+
+#slide3 {
+  background-image: url(../img/3.jpg);
+  background-size: 100%;
+  padding: 6% 0 0 0;
+  background-position: bottom;
+}
+
+#slide4 {
+  background-image: url(../img/4.jpg);
+  padding: 6% 0 0 0;
+  background-size: 100%;
+  background-position: bottom;
+}
+
+#slide5 {
+  background-image: url(../img/5.jpg);
+  background-size: 100%;
+  padding: 6% 0 0 0;
+}
+
+#slide6 {
+  background-image: url(../img/6.jpg);
+  background-size: 100%;
+  padding: 6% 0 0 0;
+  background-position: center;
+}
+
+#slide7 {
+  background-image: url(../img/7.jpg);
+  padding: 6% 0 0 0;
+  background-position: bottom;
+  background-size: 100%;
+}
+
+#slide8 {
+  background-image: url(../img/8.jpg);
+  background-size: 100%;
+  padding: 6% 0 0 0;
+}
+
+#slide9 {
+  background-image: url(../img/9.jpg);
+  background-size: 100%;
+  padding: 6% 0 0 0;
+}
+
+#slide10 {
+  background-image: url(../img/10.jpg);
+  background-size: 100%;
+  padding: 6% 0 0 0;
+}
+
+#slide11 {
+  background-image: url(../img/11.jpg);
+  padding: 6% 0 0 0;
+  background-position: bottom;
+  background-size: 100%;
+}
+
+#slide12 {
+  background-image: url(../img/12.jpg);
+  background-size: 100%;
+  padding: 6% 0 0 0;
+}
+
+#slide13 {
+  background-image: url(../img/13.jpg);
+  background-size: 100%;
+  padding: 6% 0 0 0;
+  background-position: bottom;
+}
+
+#slide14 {
+  background-image: url(../img/14.jpg);
+  padding: 6% 0 0 0;
+  background-position: center;
+  background-size: 100%;
+}
+
+#slide15 {
+  background-image: url(../img/15.jpg);
+  background-size: 100%;
+  padding: 6% 0 0 0;
+  background-position: center;
+}
+
+#slide16 {
+  background-image: url(../img/16.jpg);
+  background-size: 100%;
+  padding: 6% 0 0 0;
+}
+
+#slide17 {
+  background-image: url(../img/17.jpg);
+  padding: 6% 0 0 0;
+  background-position: bottom;
+  background-size: 100%;
+}
+
+#slide18 {
+  background-image: url(../img/18.jpg);
+  background-size: 100%;
+  padding: 6% 0 0 0;
+  background-position: bottom;
+}
+
+#slide19 {
+  background-image: url(../img/19.jpg);
+  background-size: 100%;
+  padding: 6% 0 0 0;
+  
+}
+
+#slide20 {
+  background-image: url(../img/20.jpg);
+  background-size: 100%;
+  padding: 6% 0 0 0;
+  background-position: bottom;
+}
+
+#slide21 {
+  background-image: url(../img/21.jpg);
+  background-size: 100%;
+  padding: 6% 0 0 0;
+  background-position: center;
+}
+
+#slide22 {
+  background-image: url(../img/22.jpg);
+  background-size: 100%;
+  padding: 6% 0 0 0;
+  background-position: bottom;
+}
+
+#slide23 {
+  background-image: url(../img/23.jpg);
+  background-size: 100%;
+  padding: 6% 0 0 0;
+}
+
+#slide24 {
+  background-image: url(../img/24.jpg);
+  padding: 6% 0 0 0;
+  background-size: 100%;
+}
 

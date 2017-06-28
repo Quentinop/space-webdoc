@@ -1,15 +1,15 @@
 $(document).ready(function() {
 	$('#fullpage').fullpage({
-		//Navigation
-		menu: '#menu',
-		lockAnchors: false,
-		anchors:['firstPage', 'secondPage'],
-		navigation: false,
-		navigationPosition: 'right',
-		navigationTooltips: ['firstSlide', 'secondSlide'],
-		showActiveTooltip: false,
-		slidesNavigation: false,
-		slidesNavPosition: 'bottom',
+//		//Navigation
+//		menu: '#menu',
+//		lockAnchors: false,
+//		anchors:['firstPage', 'secondPage'],
+//		navigation: false,
+//		navigationPosition: 'right',
+//		navigationTooltips: ['firstSlide', 'secondSlide'],
+//		showActiveTooltip: false,
+//		slidesNavigation: false,
+//		slidesNavPosition: 'bottom',
 
 		//Scrolling
 		css3: true,
@@ -46,10 +46,10 @@ $(document).ready(function() {
 
 		//Design
 		controlArrows: true,
-		verticalCentered: true,
+		verticalCentered: false,
 		sectionsColor : ['#ccc', '#fff'],
-		paddingTop: '3em',
-		paddingBottom: '10px',
+		paddingTop: '0px',//modifié pour le slider
+		paddingBottom: '0px',//same
 		fixedElements: '#header, .footer',
 		responsiveWidth: 0,
 		responsiveHeight: 0,
@@ -65,7 +65,10 @@ $(document).ready(function() {
 
 		//events
 		onLeave: function(index, nextIndex, direction){},
-		afterLoad: function(anchorLink, index){},
+		afterLoad: function(anchorLink, index){
+					if(index == 2){
+						$('#imageActive').addClass('active');
+					}},
 		afterRender: function(){},
 		afterResize: function(){},
 		afterResponsive: function(isResponsive){},
