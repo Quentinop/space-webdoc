@@ -64,18 +64,9 @@ $(document).ready(function() {
 	});
 });
 
-var items = document.querySelectorAll('.item');
 var container = document.querySelector('#fullpage');
 var chapters_btn = document.querySelector('.chapters');
 var chapters = document.querySelector('.menu-pop-up');
-
-for(var i = 0; i < items.length; i++)
-{
-	items[i].addEventListener('click', function(e) 
-	{
-		container.style.transform = 'translateY(-' + e.target.id * 100 + '%)';
-	});
-}
 
 chapters_btn.addEventListener('click', function(e) {
 	chapters.style.opacity = 1;
@@ -89,7 +80,11 @@ for(var i = 0; i < stars.length; i++)
 {
 	stars[i].addEventListener('click', function(e) 
 	{
+		container.style.transform = 'translateY(-' + e.target.id / 2 * 100 + '%)';
 		cleanTimeline()
+		cleanActive()
+		slides[e.target.id/2].classList.add('active')
+		slides[e.target.id/2].classList.add('fp-completely')
 		this.style.width = '20px'
 		this.style.height = '20px'
 		this.style.transform = 'translateY(100%)'
@@ -107,6 +102,45 @@ for(var i = 0; i < stars.length; i++)
 	});
 }
 
+var slides = document.querySelectorAll('.section');
+initTimeline()
+
+function initTimeline()
+{
+	stars[0].style.width = '20px'
+	stars[0].style.height = '20px'
+	stars[0].style.transform = 'translateY(100%)'
+
+	bars[0].style.transformOrigin = '100% 100%'
+	bars[0].style.transform = 'rotate(-10deg)'
+}
+
+document.addEventListener('wheel', function(e) {
+	for(var i = 0; i < slides.length; i++)
+	{
+		if(slides[i].classList.contains('active')){
+			cleanTimeline()
+			var index = slides[i].getAttribute('id')
+			
+			console.log(index);
+			timeline_items[index*2].style.width = '20px'
+			timeline_items[index*2].style.height = '20px'
+			timeline_items[index*2].style.transform = 'translateY(100%)'
+
+			if(parseInt(index*2)-1 >= 0)
+			{
+				timeline_items[parseInt(index*2)-1].style.transformOrigin = '0% 0%'
+				timeline_items[parseInt(index*2)-1].style.transform = 'rotate(10deg)'
+			}
+			if(parseInt(index*2)+1 < timeline_items.length)
+			{
+				timeline_items[parseInt(index*2)+1].style.transformOrigin = '100% 100%'
+				timeline_items[parseInt(index*2)+1].style.transform = 'rotate(-10deg)'
+			}
+		}
+	}
+});
+
 function cleanTimeline()
 {
 	for(var i = 0; i < stars.length; i++)
@@ -119,4 +153,17 @@ function cleanTimeline()
 	{
 		bars[i].style.transform = 'rotate(0deg)'
 	}
+}
+
+function cleanActive()
+{
+	for(var i = 0; i < slides.length; i++)
+	{
+		if(slides[i].classList.contains('active'))
+		{
+			slides[i].classList.remove('active')
+			slides[i].classList.remove('fp-completely')
+		}
+	}
+
 }
