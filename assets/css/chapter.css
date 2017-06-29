@@ -110,6 +110,21 @@ video::-webkit-media-controls
   display: none !important;
 }
 
+.whiteText {
+  color: white;
+  text-decoration: none;
+}
+
+.blackText {
+  color: white;
+  text-decoration: none;
+}
+
+.blackTextUnderline {
+  color: black;
+  text-decoration: underline;
+}
+
 /* TIMELINE */
 
 .timeline
@@ -187,6 +202,7 @@ video::-webkit-media-controls
 
 /* BUTTON */
 
+/*
 .button-outline
 {
     border: 1px solid #fff;
@@ -197,7 +213,24 @@ video::-webkit-media-controls
     justify-content: center;
     margin-top: 7rem;
     transition: all ease-in-out 0.3s;
+
 }
+*/
+
+.button-outline
+{
+    border: 1px solid #fff;
+    width: 15rem;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 7rem;
+    transition: all ease-in-out 0.3s;
+    background-color: #0C0E37;
+}
+
+
 .button-outline a
 {
     font-weight: 600;
