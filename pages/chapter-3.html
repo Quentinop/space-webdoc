@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <title>Webdoc - Chapitre 3</title>
   <link rel="stylesheet" type="text/css" href="../node_modules/fullpage.js/dist/jquery.fullPage.min.css" />
+  <link rel="stylesheet" href="../node_modules/jquery-modal/jquery.modal.min.css" />
   <link rel="stylesheet" href="../assets/css/chapter3.css" />
 
 
@@ -37,10 +38,13 @@
 		<source src="../assets/img/meteo.mp4" type="video/mp4">
       </video>
 
+      <div id="ex1" style="display:none;">
+        <p>Thanks for clicking. That felt good. <a href="#" rel="modal:close">Close</a> or press ESC</p>
+      </div>
       <!--      <img src="http://i156.photobucket.com/albums/t6/car4dave/sputnik-1.gif" alt="Sputnik 1" class="imgRotation" id="imageActive">-->
       <div class="mid">Timeline</div>
       <div class="topRight">Menu</div>
-      <div class="midRight">En savoir plus</div>
+      <p><a href="#ex1" rel="modal:open" class="midRight">Open Modal</a></p>
       <div class="botRight">Sound</div>
 
     </div>
@@ -85,8 +89,7 @@
       <video id="myVideo5" data-autoplay>
 		<source src='../assets/img/conference.mp4' type="video/mp4">
       </video>
-      <h2 class="topLeft">Thomas Pesquet témoigne :
-“ Si nous partons dans l’espace, ce n’est pas pour nous-mêmes, mais parce que nous croyons que c’est utile pour tout le monde sur Terre. C’est une aventure collective, née des rêves et du travail d’une multitude de personnes. C’est pourquoi je tiens à la faire partager au plus grand nombre. ”</h2>
+      <h2 class="topLeft">Thomas Pesquet témoigne : “ Si nous partons dans l’espace, ce n’est pas pour nous-mêmes, mais parce que nous croyons que c’est utile pour tout le monde sur Terre. C’est une aventure collective, née des rêves et du travail d’une multitude de personnes. C’est pourquoi je tiens à la faire partager au plus grand nombre. ”</h2>
       <div class="mid">Timeline</div>
       <div class="topRight">Menu</div>
       <div class="botRight">Sound</div>
@@ -114,15 +117,12 @@
       <div class="botRight">Sound</div>
 
     </div>
-    
-        <div id="chapter9" class="section">
+
+    <div id="chapter9" class="section">
 
       <h1>Fin du chapitre 3</h1>
-      <h2>" Une option est de rester sur Terre pour toujours, et il y aura une extinction à un moment donné. L’alternative est de devenir une espèce multi-planétaire. ” 
-Elon Musk, PDG de SpaceX
-
-Le réchauffement climatique, les dérèglements environnementaux, l’explosion de la démographie et la probabilité de se faire réduire en poussière par un astéroïde auront peut-être un jour raison de notre espèce. Mais le futur de l’humanité est-il pour autant sur une autre planète ? Faut-il se lancer corps et âmes dans la quête d’un ailleurs spatial avant qu’il ne soit trop tard ?
-</h2>
+      <h2>" Une option est de rester sur Terre pour toujours, et il y aura une extinction à un moment donné. L’alternative est de devenir une espèce multi-planétaire. ” Elon Musk, PDG de SpaceX Le réchauffement climatique, les dérèglements environnementaux, l’explosion de la démographie et la probabilité de se faire réduire en poussière par un astéroïde auront peut-être un jour raison de notre espèce. Mais le futur de l’humanité est-il pour autant sur une autre planète ? Faut-il se lancer corps et âmes dans la quête d’un ailleurs spatial avant qu’il ne soit trop tard ?
+      </h2>
       <a href="../index.html">Revenir à l'accueil</a>
       <div class="mid">Timeline</div>
       <div class="topRight">Menu</div>
@@ -138,6 +138,7 @@ Le réchauffement climatique, les dérèglements environnementaux, l’explosion
 
 
   <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="../node_modules/jquery-modal/jquery.modal.min.js"></script>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script type="text/javascript" src="../node_modules/fullpage.js/dist/jquery.fullpage.min.js"></script>
   <script src="../assets/js/chapter.js"></script>
