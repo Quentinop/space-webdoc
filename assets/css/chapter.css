@@ -177,6 +177,18 @@ video::-webkit-media-controls
     to {transform: scale(1.1);}
 }
 
+/* MUTE */
+
+.mute-button
+{
+    height: 30px;
+    width: auto;
+    position: fixed;
+    bottom: 40px;
+    left: 7%;
+    z-index: 10;
+    cursor: pointer;
+}
 
 /* BURGER MENU */
 
@@ -184,6 +196,8 @@ video::-webkit-media-controls
 {
     position: fixed;
     top: 30px;
+    left: 5%;
+    z-index: 10;
 }
 .burger:hover .burger-menu
 {
@@ -286,9 +300,8 @@ video::-webkit-media-controls
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 7rem;
+    margin-top: 2rem;
     transition: all ease-in-out 0.3s;
-
 }
 .button-outline a
 {
@@ -314,7 +327,7 @@ video::-webkit-media-controls
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 7rem;
+    margin-top: 2rem;
     transition: all ease-in-out 0.3s;
 }
 .button-blue a

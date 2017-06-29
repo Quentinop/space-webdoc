@@ -38,7 +38,7 @@ $(document).ready(function() {
 		controlArrows: true,
 		verticalCentered: true,
 		sectionsColor : ['#ccc', '#fff'],
-		paddingTop: '3em',
+		paddingTop: '0em',
 		paddingBottom: '10px',
 		fixedElements: '#header, .footer',
 		responsiveWidth: 0,
@@ -80,7 +80,7 @@ var slides = document.querySelectorAll('.section');
 
 for(var i = 0; i < stars.length; i++)
 {
-	stars[i].addEventListener('click', function(e) 
+	stars[i].addEventListener('click', function(e)
 	{
 		console.log(e.target.id);
 		container.style.transform = 'translateY(-' + e.target.id * 100 + '%)';
@@ -113,8 +113,8 @@ document.addEventListener('wheel', function(e) {
 		if(slides[i].classList.contains('active')){
 			cleanTimeline()
 			var index = slides[i].getAttribute('id')
-		
-		
+
+
 			stars[i].style.boxShadow = '0 0 35px 21px rgba(255, 56, 56, 0.5)'
 
 			/*if(parseInt(index*2)-1 >= 0)
