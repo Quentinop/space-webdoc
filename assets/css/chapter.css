@@ -163,6 +163,10 @@ video::-webkit-media-controls
         0 0 20px 7px rgba(255, 255, 255, 0.5);
     animation: star-scale ease-in-out 1.2s infinite alternate-reverse;
 }
+.star:first-child
+{
+    box-shadow: 0 0 35px 21px rgba(255, 56, 56, 0.5);
+}
 .star:nth-child(odd)
 {
     animation-delay: 0.6s;
@@ -171,10 +175,6 @@ video::-webkit-media-controls
 @keyframes star-scale {
     from {transform: scale(0.5);}
     to {transform: scale(1.1);}
-}
-.current-slide
-{
-    box-shadow: 0 0 35px 21px rgba(255, 56, 56, 0.5);
 }
 
 /* SCROLL */
