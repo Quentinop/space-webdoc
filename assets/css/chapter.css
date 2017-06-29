@@ -105,6 +105,10 @@ video
     object-fit: contain;
     background-color: #000;
 }
+video::-webkit-media-controls
+{
+  display: none !important;
+}
 
 /* TIMELINE */
 
@@ -119,6 +123,16 @@ video
     right: 5%;
     z-index: 10;
 }
+
+.chapter-1 .timeline
+{
+    height: 70%;
+}
+.chapter-2 .timeline
+{
+    height: 90%;
+}
+
 .star
 {
     width: 1.5rem;
@@ -428,12 +442,4 @@ video
     top: -30%;
     left: 90%;
     height: 170%;
-}
-.chapter-1 .timeline
-{
-    height: 70%;
-}
-.chapter-2 .timeline
-{
-    height: 90%;
 }
