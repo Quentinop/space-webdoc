@@ -1,37 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<title>Webdoc</title>
-	<link rel="stylesheet" type="text/css" href="../node_modules/fullpage.js/dist/jquery.fullPage.min.css" />
-	<link rel="stylesheet" href="../assets/css/main.css">
+  <meta charset="UTF-8">
+  <title>Webdoc - Chapitre 3</title>
+  <link rel="stylesheet" type="text/css" href="../node_modules/fullpage.js/dist/jquery.fullPage.min.css" />
+  <link rel="stylesheet" href="../assets/css/chapter3.css" />
+
+
 </head>
+
 <body>
 
-<div class="menu-pop-up">
-	<a href="../index.html">1</a>
-	<a href="chapter-2.html">2</a>
-	<a href="#">3</a>
-</div>
 
-<div class="menu">
-	<div class="item chapters"></div>
-	<div id="0" class="item red">1</div>
-	<div id="1" class="item blue">2</div>
-	<div id="2" class="item green">3</div>
-	<div id="3" class="item orange">4</div>
-</div>
+  <div id="fullpage">
 
-	<div id="fullpage">
-		<div class="section">chapter 3</div>
-		<div class="section">chapter 3</div>
-		<div class="section">chapter 3</div>
-		<div class="section">chapter 3</div>
-	</div>
+    <div id="chapter1" class="section chapter">
 
-	<script src="../node_modules/jquery/dist/jquery.min.js"></script>
-	<script src="../node_modules/fullpage.js/dist/jquery.fullpage.js"></script>
-	<!-- 	<script src="node_modules/fullpage.js/vendors/jquery.easings.min.js"></script>-->	
-	<script src="../assets/js/main.js"></script>
+      <h1>Chapitre 3 : Préparer l'avenir</h1>
+      <h3>Depuis toujours, l’Homme a rêvé d’aller dans l’espace. Grâce au développement de ses compétences techniques et grâce aux nombreux cobayes animaliers, il a tout mis en oeuvre pour conquérir l’espace. L’avenir de l’humanité est-il vraiment dans l’espace ?
+      </h3>
+      <div>Scroll</div>
+      <audio id="myAudio1" controls data-autoplay>
+        <source src="../assets/img/voyage.wav" type="audio/wav">
+      </audio>
+      <div class="mid">Timeline</div>
+      <div class="topRight">Menu</div>
+      <div class="botRight">Sound</div>
+
+    </div>
+    <div id="chapter2" class="section">
+
+      <h3 class="topLeft">Les satellites météo signalent le changement climatique et prévoient le temps. Ils permettent de prédire les catastrophes naturelles, comme les inondations, les orages, les tornades, les typhons. Ils permettent également de repérer des incendies ou d’analyser leur étendu. Les humains peuvent dans ces conditions êtres prévenus en amont et des mesures de protections peuvent être mises en place.
+      </h3>
+      <video id="myVideo1" data-autoplay poster="../assets/img/23.jpg">
+		<source src="../assets/img/meteo.mp4" type="video/mp4">
+      </video>
+
+      <!--      <img src="http://i156.photobucket.com/albums/t6/car4dave/sputnik-1.gif" alt="Sputnik 1" class="imgRotation" id="imageActive">-->
+      <div class="mid">Timeline</div>
+      <div class="topRight">Menu</div>
+      <div class="midRight">En savoir plus</div>
+      <div class="botRight">Sound</div>
+
+    </div>
+    <div id="chapter3" class="section">
+
+      <video id="myVideo2" data-autoplay>
+		<source src="../assets/img/land.mp4" type="video/mp4">
+      </video>
+      <h2 class="topLeft">Mars Science laboratory est une mission d'exploration de la planète Mars à l’aide d’un rover. La sonde spatiale a été lancée le 26 novembre 2011 par une fusée Atlas V et s'est posée le 6 août 2012. Au cours de sa mission, le rover, baptisé Curiosity, va rechercher si un environnement favorable à l'apparition de la vie a existé, analyser la composition minéralogique, étudier la géologie de la zone explorée et collecter des données sur la météorologie et les radiations qui atteignent le sol de la planète.</h2>
+      <div class="mid">Timeline</div>
+      <div class="topRight">Menu</div>
+      <div class="botRight">Sound</div>
+
+    </div>
+
+    <div id="chapter4" class="section">
+
+      <video id="myVideo3" data-autoplay>
+		<source src='../assets/img/spacex.mp4' type="video/mp4">
+      </video>
+      <h2 class="topLeft">Le projet "Mars Colonial Transporter" de SpaceX prévoit un vol habité vers Mars en 2024. Le but est de coloniser Mars à l'horizon 2040. Pour cela Elon Musk,PDG de SpaceX, crée des fusées qui sont en partie réutilisables capable d'atterrir sur Terre après leur mission spatiale. Peu d’informations sont encore divulguées concernant ce projet qui paraît fou !</h2>
+      <div class="mid">Timeline</div>
+      <div class="topRight">Menu</div>
+      <div class="botRight">Sound</div>
+
+    </div>
+
+    <div id="chapter5" class="section">
+
+      <video id="myVideo4" data-autoplay>
+		<source src='../assets/img/proxima2.mp4' type="video/mp4">
+      </video>
+      <h2 class="topLeft">La mission Proxima marque un temps fort pour la communauté scientifique européenne. Ses expériences visent à faire avancer la connaissance du corps humain, la physique et la biologie, et à démontrer de nouvelles technologies à bord de la Station Spatiale Internationale.</h2>
+      <div class="mid">Timeline</div>
+      <div class="topRight">Menu</div>
+      <div class="botRight">Sound</div>
+
+    </div>
+
+    <div id="chapter6" class="section">
+
+      <video id="myVideo5" data-autoplay>
+		<source src='../assets/img/conference.mp4' type="video/mp4">
+      </video>
+      <h2 class="topLeft">Thomas Pesquet témoigne :
+“ Si nous partons dans l’espace, ce n’est pas pour nous-mêmes, mais parce que nous croyons que c’est utile pour tout le monde sur Terre. C’est une aventure collective, née des rêves et du travail d’une multitude de personnes. C’est pourquoi je tiens à la faire partager au plus grand nombre. ”</h2>
+      <div class="mid">Timeline</div>
+      <div class="topRight">Menu</div>
+      <div class="botRight">Sound</div>
+
+    </div>
+    <div id="chapter7" class="section">
+
+      <video id="myVideo6" muted loop data-autoplay>
+		<source src='../assets/img/keppler.mp4' type="video/mp4">
+      </video>
+      <h2 class="topLeft">Selon des nouvelles données publiées par la NASA dans le cadre de sa mission Kepler, 219 nouvelles exoplanètes viennent d’être découvertes. Parmi elles, dix semblent être rocheuses, et être en orbite dans une zone habitable de leur étoile, ce qui voudrait dire qu’elles pourraient abriter des formes d’eau liquide à leur surface. Sauf que la plus proche d’entre elles se trouve à 40 années-lumière de la Terre. Avec les moyens technologiques actuels, il faudrait des millions d’années pour l’atteindre.
+      </h2>
+      <div class="mid">Timeline</div>
+      <div class="topRight">Menu</div>
+      <div class="botRight">Sound</div>
+
+    </div>
+
+    <div id="chapter8" class="section">
+
+      <h3>Les cliniques spatiales simulent durant deux mois l'impesanteur et ses conséquences sur les astronautes dans l'espace, et dont les retombées pourraient aussi être médicales. Pendant plus de 60 jours des volontaires resteront allongés afin d’en savoir plus sur les réductions de l’activité motrice des astronautes, provoquant une perte de force musculaire, à laquelle viennent également s’ajouter une déminéralisation osseuse et une fatigue des muscles.</h3>
+
+      <div class="mid">Timeline</div>
+      <div class="topRight">Menu</div>
+      <div class="botRight">Sound</div>
+
+    </div>
+    
+        <div id="chapter9" class="section">
+
+      <h1>Fin du chapitre 3</h1>
+      <h2>" Une option est de rester sur Terre pour toujours, et il y aura une extinction à un moment donné. L’alternative est de devenir une espèce multi-planétaire. ” 
+Elon Musk, PDG de SpaceX
+
+Le réchauffement climatique, les dérèglements environnementaux, l’explosion de la démographie et la probabilité de se faire réduire en poussière par un astéroïde auront peut-être un jour raison de notre espèce. Mais le futur de l’humanité est-il pour autant sur une autre planète ? Faut-il se lancer corps et âmes dans la quête d’un ailleurs spatial avant qu’il ne soit trop tard ?
+</h2>
+      <a href="../index.html">Revenir à l'accueil</a>
+      <div class="mid">Timeline</div>
+      <div class="topRight">Menu</div>
+      <div class="botRight">Sound</div>
+
+    </div>
+
+
+  </div>
+
+
+
+
+
+  <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script type="text/javascript" src="../node_modules/fullpage.js/dist/jquery.fullpage.min.js"></script>
+  <script src="../assets/js/chapter.js"></script>
 </body>
+
 </html>
