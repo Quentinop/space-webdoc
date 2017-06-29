@@ -106,12 +106,12 @@ video
 
 /* TIMELINE */
 
-/*.timeline
+.timeline
 {
     width: 20px;
     height: 50%;
     justify-content: space-around;
-    position: fixed;
+    position: absolute;
     top: 50%;
     transform: translate(-50%,-50%);
     right: 5%;
@@ -126,21 +126,44 @@ video
     box-shadow:
         0 0 4px 3px rgba(145, 145, 145, 0.5),
         0 0 20px 7px rgba(255, 255, 255, 0.5);
-    animation: star-scale ease-in-out 2s infinite alternate-reverse;
+    animation: star-scale ease-in-out 1.2s infinite alternate-reverse;
 }
 .star:nth-child(odd)
 {
-    animation-delay: 1s;
+    animation-delay: 0.6s;
 }
 
 @keyframes star-scale {
-    from {transform: scale(0.7);}
-    to {transform: scale(1);}
+    from {transform: scale(0.5);}
+    to {transform: scale(1.1);}
 }
-.active
+.current-slide
 {
     box-shadow: 0 0 35px 21px rgba(255, 56, 56, 0.5);
-}*/
+}
+
+/* SCROLL */
+
+.scroll
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    left: -9%;
+    bottom: 0;
+    transform: rotate(90deg);
+    transform-origin: right bottom;
+}
+.scroll-text
+{
+    padding-right: 2rem;
+}
+.scroll-border
+{
+    border-top: 1px solid #fff;
+    width: 10rem;
+}
 
 /* BUTTON */
 
@@ -196,7 +219,7 @@ video
 .card-xsmall { width: 25%; }
 .card-small { width: 35%; }
 .card-medium { width: 50%; }
-.card-large { width: 100%; }
+.card-large { width: 80%; }
 
 .black-card
 {
@@ -222,11 +245,11 @@ video
 .bottomRight
 {
     bottom: 40px;
-    right: 5%;
+    right: 10%;
 }
 .bottomRight .card
 {
-    margin: 0;
+    margin-right: 0;
 }
 
 /* SLIDE IMAGE AND TEXT */
@@ -271,16 +294,25 @@ video
 .slide-22 { background-image: url(../img/22.jpg); }
 .slide-23 { background-image: url(../img/23.jpg); }
 
-.fp-controlArrow.fp-prev, .fp-controlArrow.fp-next
+.fp-controlArrow.fp-prev
 {
     border-width: 25px 25px 25px 25px;
+}
+.fp-controlArrow.fp-next
+{
+    border-width: 25px 125px 25px 25px;
 }
 
 /* SPECIFIC SECTIONS */
 
+.section-5 .text-container
+{
+    z-index: 1;
+}
+
 .section-6 .img-box
 {
-    height: 140%;
+    height: 125%;
     top: 25%;
     left: 90%;
 }
@@ -291,16 +323,16 @@ video
 }
 .section-8 .card
 {
-    margin: 0;
+    margin: 0 100px 0 0;
     padding: 20px 40px 20px 140px;
 }
 .section-8 .img-box
 {
-    height: 150%;
-    top: 20%;
-    left: -50%;
+    height: 110%;
+    top: 37%;
+    left: -65%;
 }
-.section-10 .card
+.section-9 .card
 {
     margin-left: auto;
 }

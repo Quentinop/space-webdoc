@@ -8,50 +8,78 @@
 </head>
 <body>
     <div id="fullpage">
-        <div class="chapter background section">
+        <div class="chapter background section section-1">
             <div class="container flex center">
                 <div class="chapter-container">
                     <h2>Découvrir le passé</h2>
                     <p>Améliorer le présent et préparer le futur nécessite la connaissance de notre passé. C’est pour cette raison que l’Homme est en constante recherche de traces de vies antérieures <br> pouvant l’amener à l’amélioration de sa vie sur Terre ou à la colonisation d’une planète. </p>
+                    <div class="scroll">
+                        <div class="scroll-text">SCROLL</div>
+                        <div class="scroll-border"></div>
+                    </div>
+                </div>
+                <div class="timeline flex">
+                    <div class="star star-1 current-slide"></div>
+                    <div class="star star-2"></div>
+                    <div class="star star-3"></div>
+                    <div class="star star-4"></div>
                 </div>
             </div>
         </div>
-        <div class="video-and-text section relative">
-            <video id="myVideo1" loop muted data-autoplay>
+        <div class="video-and-text section relative section-2">
+            <video id="myVideo1" loop data-autoplay>
                 <source src="../assets/img/simulator.mp4" type="video/mp4">
             </video>
             <div class="absolute bottomLeft">
                 <div class="card card-xsmall white-opacity-card">
-                    <h3>Mon titre</h3>
+                    <h3>Vers d'autres planètes plus lointaines</h3>
                     <p>En 1962, la sonde américaine Mariner-2 survole pour la première fois une autre planète : Vénus. <br> En 1975, la sonde soviétique Venera-9 retransmet les premières photographies prises depuis la surface d’une autre planète, Vénus. <br> Des sondes telles que Galileo ou New Horizons ont été envoyé à destinations d’autres planètes comme Jupiter ou Saturne.
                     </p>
                 </div>
             </div>
+            <div class="timeline flex">
+                <div class="star star-1 current-slide"></div>
+                <div class="star star-2"></div>
+                <div class="star star-3"></div>
+                <div class="star star-4"></div>
+            </div>
         </div>
-        <div class="video-and-text section relative">
+        <!-- <div class="video-and-text section section-3 relative">
             <video id="myVideo1" data-autoplay>
                 <source src="../assets/img/telescope.mp4" type="video/mp4">
             </video>
             <div class="absolute bottomRight">
-                <div class="card black-card">
+                <div class="card white-opacity-card">
                     <p>Le 25 avril 1990, le télescope spatial Hubble est lancé par la NASA.</p>
                 </div>
             </div>
-        </div>
-        <div class="video-and-text section relative">
+            <div class="timeline flex">
+                <div class="star star-1 current-slide"></div>
+                <div class="star star-2"></div>
+                <div class="star star-3"></div>
+                <div class="star star-4"></div>
+            </div>
+        </div> -->
+        <div class="video-and-text section section-4 relative">
             <video id="myVideo2" data-autoplay>
                 <source src='../assets/img/Hubble.mp4' type="video/mp4">
             </video>
             <div class="absolute bottomLeft">
-                <div class="card card-medium black-card">
-                    <h3>Mon titre</h3>
+                <div class="card card-large black-card">
+                    <h3>Hubble et les données collectées</h3>
                     <p>Les données collectées ont contribué à des découvertes de grande portée dans le domaine de l’astrophysique telles que la mesure du taux d’expansion de l’Univers, la confirmation de la présence de trous noirs supermassifs au centre des galaxies ou l’existence de la matière noire et de l’énergie noire.</p>
                 </div>
             </div>
+            <div class="timeline flex">
+                <div class="star star-1 current-slide"></div>
+                <div class="star star-2"></div>
+                <div class="star star-3"></div>
+                <div class="star star-4"></div>
+            </div>
         </div>
-        <div class="section">
-            <div class="background slide slide-1"></div>
+        <div class="section section-5 relative">
             <div class="background slide slide-2"></div>
+            <div class="background slide slide-1"></div>
             <div class="background slide slide-3"></div>
             <div class="background slide slide-4"></div>
             <div class="background slide slide-5"></div>
@@ -73,11 +101,20 @@
             <div class="background slide slide-21"></div>
             <div class="background slide slide-22"></div>
             <div class="background slide slide-23"></div>
+            <div class="timeline flex">
+                <div class="star star-1 current-slide"></div>
+                <div class="star star-2"></div>
+                <div class="star star-3"></div>
+                <div class="star star-4"></div>
+            </div>
+            <div class="text-container absolute bottomLeft">
+                <h3>Photos prises par le téléscope Hubble</h3>
+            </div>
         </div>
         <div class="image-and-text section section-6">
             <div class="container flex center">
                 <div class="card-container card card-medium white-card">
-                    <h3>Mon titre</h3>
+                    <h3>Son impact sur la médecine</h3>
                     <p>
                         Lorsque le télescope Hubble a été mis en orbite, il était myope et ses images étaient floues. Les ingénieurs ont alors mis au point un logiciel pour améliorer la lecture des images. Ce logiciel est aujourd’hui utilisé en radiographie pour détecter des tumeurs cancéreuses à un stade très précoce. Cette technologie a permis de sauver des milliers de vie et justifie presque à elle seule l’investissement dans le spatial.
                     </p>
@@ -86,55 +123,83 @@
                     </div>
                 </div>
             </div>
+            <div class="timeline flex">
+                <div class="star star-1 current-slide"></div>
+                <div class="star star-2"></div>
+                <div class="star star-3"></div>
+                <div class="star star-4"></div>
+            </div>
         </div>
         <div class="video-and-text section relative section-7">
-            <video id="myVideo4" muted loop data-autoplay>
+            <video id="myVideo4" loop data-autoplay>
                 <source src='../assets/img/herschel.mp4' type="video/mp4">
             </video>
             <div class="absolute bottomLeft">
                 <div class="card card-xsmall white-card">
-                    <h3>Mon titre</h3>
+                    <h3>Herschel, le télescope spatial européen</h3>
                     <p>Herschel est un télescope spatial infrarouge développé par l'Agence spatiale européenne (ESA) opérationnel entre 2009 et 2013. Son objectif scientifique était de réaliser des observations astronomiques dans les domaines de l’infrarouge lointain et du submillimétrique pour étudier la formation des étoiles, la naissance des galaxies primitives et l'évolution des galaxies ainsi que la chimie du milieu spatial.
                     </p>
                 </div>
+            </div>
+            <div class="timeline flex">
+                <div class="star star-1 current-slide"></div>
+                <div class="star star-2"></div>
+                <div class="star star-3"></div>
+                <div class="star star-4"></div>
             </div>
         </div>
         <div class="image-and-text section section-8">
             <div class="container flex center left">
                 <div class="card-container card card-medium white-card">
-                    <h3>Mon titre</h3>
+                    <h3>Planck</h3>
                     <p>
                         Planck est un observatoire spatial développé par l'Agence spatiale européenne (ESA) avec une participation de la NASA. La mission du satellite est de cartographier les infimes variations de température du fond diffus cosmologique, rayonnement dans le domaine micro-onde montrant l'Univers tel qu'il était 380 000 ans après le Big Bang.
                     </p>
+                    <h3>Herschel et Planck</h3>
+                    <p>Les télescopes européens Herschel et Planck sont 10 fois plus sensibles dans le domaine infrarouge et dans celui des rayons gamma que ceux lancés avant eux. Ils pourraient être utilisés sur Terre pour la surveillance des forêts et la détection précoce des incendies. Ou encore dans les aéroports pour repérer les gens fiévreux.</p>
                     <div class="img-box">
-                        <img src="../assets/img/radio.jpg" alt="Observatoire spatial Planck">
+                        <img src="../assets/img/planck.png" alt="Observatoire spatial Planck">
                     </div>
                 </div>
             </div>
+            <div class="timeline flex">
+                <div class="star star-1 current-slide"></div>
+                <div class="star star-2"></div>
+                <div class="star star-3"></div>
+                <div class="star star-4"></div>
+            </div>
         </div>
 
-        <div class="section">
-            <h3>Les télescopes européens Herschel et Planck sont 10 fois plus sensibles dans le domaine infrarouge et dans celui des rayons gamma que ceux lancés avant eux. Ils pourraient être utilisés sur Terre pour la surveillance des forêts et la détection précoce des incendies. Ou encore dans les aéroports pour repérer les gens fiévreux.</h3>
-        </div>
-
-        <div class="video-and-text section section-10 relative">
-            <video id="myVideo5" muted loop data-autoplay>
+        <div class="video-and-text section section-9 relative">
+            <video id="myVideo5" loop data-autoplay>
                 <source src='../assets/img/curiosity.mp4' type="video/mp4">
             </video>
             <div class="absolute bottomRight">
                 <div class="card card-xsmall black-card">
-                    <h3>Mon titre</h3>
+                    <h3>Y a-t-il eu des formes de vie sur Mars ?</h3>
                     <p>Le projet Mars Science Laboratory associé à l'agence spatiale américaine de la NASA a débuté en 2003. C’est en 2011 par une fusée Atlas V que le rover “Curiosity” a été lancé en direction de Mars. Il a pour principaux objectifs déterminer si des conditions propices à la vie ont pu exister sur Mars et préparer l'exploration et une éventuelle vie humaine sur planète rouge.</p>
                 </div>
             </div>
+            <div class="timeline flex">
+                <div class="star star-1 current-slide"></div>
+                <div class="star star-2"></div>
+                <div class="star star-3"></div>
+                <div class="star star-4"></div>
+            </div>
         </div>
-        <div class="chapter background section">
+        <div class="chapter background section section-10">
             <div class="container flex center">
                 <div class="chapter-container">
                     <h2>Conclusion</h2>
                     <p>En définitive, les recherches liées au passé poussent les technologies actuelles ainsi que certains secteurs de recherche à se parfaire afin d’améliorer notre vie sur Terre.</p>
                     <div class="button-outline"><a href="chapter-2.html">Chapitre suivant</a></div>
                 </div>
+            </div>
+            <div class="timeline flex">
+                <div class="star star-1 current-slide"></div>
+                <div class="star star-2"></div>
+                <div class="star star-3"></div>
+                <div class="star star-4"></div>
             </div>
         </div>
     </div>
