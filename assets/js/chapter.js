@@ -47,7 +47,7 @@ $(document).ready(function() {
 		//Design
 		controlArrows: true,
 		verticalCentered: false,
-		sectionsColor : ['#ccc', '#fff'],
+		sectionsColor : ['#0C0E37', '#fff'],
 		paddingTop: '0px',//modifié pour le slider
 		paddingBottom: '0px',//same
 		fixedElements: '#header, .footer',
