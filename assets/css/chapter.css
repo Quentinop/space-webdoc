@@ -254,6 +254,7 @@ video
 .bottomRight .card
 {
     margin-right: 0;
+    margin-left: auto;
 }
 
 /* SLIDE IMAGE AND TEXT */
@@ -309,34 +310,34 @@ video
 
 /* SPECIFIC SECTIONS */
 
-.section-5 .text-container
+.chapter-1 .section-5 .text-container
 {
     z-index: 1;
 }
 
-.section-6 .img-box
+.chapter-1 .section-6 .img-box
 {
     height: 125%;
     top: 25%;
     left: 90%;
 }
-.section-7 video
+.chapter-1 .section-7 video
 {
     object-position: right;
     background-color: #0C0E37;
 }
-.section-8 .card
+.chapter-1 .section-8 .card
 {
     margin: 0 100px 0 0;
     padding: 20px 40px 20px 140px;
 }
-.section-8 .img-box
+.chapter-1 .section-8 .img-box
 {
     height: 110%;
     top: 37%;
     left: -65%;
 }
-.section-9 .card
+.chapter-1 .section-9 .card
 {
     margin-left: auto;
 }
