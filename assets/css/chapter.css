@@ -202,7 +202,11 @@ video
 }
 .chapter-container
 {
-    max-width: 70%;
+    max-width: 80%;
+}
+.chapter-container h1
+{
+    letter-spacing: normal;
 }
 .chapter-container p
 {
