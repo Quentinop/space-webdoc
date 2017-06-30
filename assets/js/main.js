@@ -206,7 +206,7 @@ function makeRatio(x, y)
 	parallax(yr, xr, or)
 }
 
-var bg = document.querySelector('.stars-bg');
+var bg = document.querySelectorAll('.stars-bg');
 var obj = document.querySelectorAll('.parallax-object');
 
 function parallax(yr, xr, or)
@@ -216,8 +216,11 @@ function parallax(yr, xr, or)
 	var opacity = 1 - or
 	opacity.toString()
 
-	bg.style.transform = 'translate(' + invert_xr + '%,' + invert_yr + '%)'
-	bg.style.opacity = opacity
+	for(var i = 0; i < bg.length; i++)
+	{
+		bg[i].style.transform = 'translate(' + invert_xr + '%,' + invert_yr + '%)'
+		bg[i].style.opacity = opacity
+	}
 	for(var i = 0; i < obj.length; i++)
 	{
 		obj[i].style.transform = 'translate(' + xr + '%,' + yr + '%)'

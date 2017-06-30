@@ -1,3 +1,25 @@
+/* animation */
+
+.animation
+{
+    width : 100vw;
+    height : 100vh;
+    background-color: #0C0E37;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    transform: scale(0);
+    animation: animation-start ease-in-out 0.8s 1;
+    transform-origin: top right;
+}
+@keyframes animation-start
+{
+    from { transform: scaleX(1); }
+    to { transform: scaleX(0); }
+}
+
+
 /* IMPORT FACES */
 
 @font-face
@@ -493,12 +515,18 @@ video::-webkit-media-controls
     top: 25%;
     left: 90%;
 }
-
 .chapter-1 .section-5
 {
     position: relative;
     background-color: black;
 }
+
+.chapter-1 .section-7
+{
+    position: relative;
+    background-color: black;
+}
+
 .chapter-1 .section-6 video
 {
     object-position: right;
@@ -519,6 +547,7 @@ video::-webkit-media-controls
 {
     margin-left: auto;
 }
+
 .chapter-2 .section-5 .section-container
 {
     display: flex;
@@ -526,6 +555,64 @@ video::-webkit-media-controls
     width : 100%;
     height : 100%;
     background-color: #000;
+}
+
+.chapter-2 .section-5
+{
+    position: relative;
+    background-color: black;
+}
+
+.chapter-2 .section-8
+{
+    position: relative;
+    background-color: black;
+}
+
+.chapter-2 .section-9
+{
+    position: relative;
+    background-color: black;
+}
+.chapter-3 .section-6
+{
+    position: relative;
+    background-color: black;
+}
+.chapter-2 .section-12
+{
+    position: relative;
+    background-color: black;
+}
+.chapter-2 .section-14  
+{
+    position: relative;
+    background-color: black;
+}
+.chapter-2 .section-14  
+{
+    position: relative;
+    background-color: black;
+}
+.chapter-2 .section-3
+{
+    position: relative;
+    background-color: black;
+}
+.chapter-2 .section-5
+{
+    position: relative;
+    background-color: black;
+}
+.chapter-2 .section-15 
+{
+    position: relative;
+    background-color: black;
+}
+.chapter-2 .section-6
+{
+    position: relative;
+    background-color: black;
 }
 .chapter-2 .section-5 .section-text
 {
@@ -582,12 +669,10 @@ video::-webkit-media-controls
 {
     object-position: left;
     object-fit: contain;
-    background-color: #0C0E37;
     width: 55%;
 }
 .chapter-2 .section-14 .section-container
 {
-    background-color: #0C0E37;
     width : 100%;
     height : 100%;
     display: flex;
@@ -604,12 +689,12 @@ video::-webkit-media-controls
 {
     object-position: left;
     object-fit: contain;
-    background-color: #0C0E37;
+    background-color: black;
     width: 60%;
 }
 .chapter-3 .section-3 .section-container
 {
-    background-color: #0C0E37;
+    background-color: black;
     width : 100%;
     height : 100%;
     display: flex;
@@ -623,11 +708,12 @@ video::-webkit-media-controls
 {
     object-position: left;
     object-fit: contain;
-    background-color: #0C0E37;
+    background-color: black;
     width: 40%;
 }
 .chapter-3 .section-5 .section-container
 {
+    background-color: black;
     width: 100%;
     height: 100%;
     display: flex;
