@@ -32,20 +32,34 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-position: center;
 }
+
 .menu-chapter--1
 {
-    background: url('../img/chapter-1.jpg') center;
+    background-image: linear-gradient( rgba(12, 14, 55, 0.66), rgba(12, 14, 55, 0.4) ), url('../img/chapter-1.jpg');
 }
+.menu-chapter--1:hover
+{
+    background-image: linear-gradient( rgba(12, 14, 55, 0.66), rgba(12, 14, 55, 0.9) ), url('../img/chapter-1.jpg');
+}
+
 .menu-chapter--2
 {
-    background: url('../img/chapter-2.jpg') center;
+    background-image: linear-gradient( rgba(12, 14, 55, 0.66), rgba(12, 14, 55, 0.4) ), url('../img/chapter-2.jpg');
+}
+.menu-chapter--2:hover
+{
+    background-image: linear-gradient( rgba(12, 14, 55, 0.66), rgba(12, 14, 55, 0.9) ), url('../img/chapter-2.jpg');
 }
 .menu-chapter--3
 {
-    background: url('../img/chapter-3.jpg') center;
+    background-image: linear-gradient( rgba(12, 14, 55, 0.66), rgba(12, 14, 55, 0.4) ), url('../img/chapter-3.jpg');
 }
-
+.menu-chapter--3:hover
+{
+    background-image: linear-gradient( rgba(12, 14, 55, 0.66), rgba(12, 14, 55, 0.9) ), url('../img/chapter-3.jpg');
+}
 .cancel
 {
     position: absolute;
