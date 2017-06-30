@@ -1,0 +1,64 @@
+.menu-chapter
+{
+    width : 100vw;
+    height : 100vh;
+    background-color: #000;
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    transition: .6s ease-in-out all;
+}
+.menu-chapter--container
+{
+    display: flex;
+    flex-direction: row;
+    width : 100%;
+    height : 100%;
+}
+.menu-chapter--container a
+{
+    display: block;
+    width: 33.33%;
+    float: left;
+    text-decoration: none;
+    color: white;
+}
+.menu-chapter--1, .menu-chapter--2, .menu-chapter--3
+{
+    flex-grow: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.menu-chapter--1
+{
+    background: url('../img/chapter-1.jpg') center;
+}
+.menu-chapter--2
+{
+    background: url('../img/chapter-2.jpg') center;
+}
+.menu-chapter--3
+{
+    background: url('../img/chapter-3.jpg') center;
+}
+
+.cancel
+{
+    position: absolute;
+    z-index: 120;
+    left: 5%;
+    top: 5%;
+    cursor: pointer;
+    width: 2%;
+    height: auto;
+    transition: .5s ease-out all
+}
+
+.cancel:hover
+{
+    transform: rotate(180deg);
+}
