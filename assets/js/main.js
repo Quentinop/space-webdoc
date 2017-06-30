@@ -63,7 +63,7 @@ $(document).ready(function() {
 			var audio = document.querySelector('.ambient-audio');
 			var current_index = 'section-' + index.toString()
 			var current = document.querySelector('.' + current_index.toString());
-
+			console.log(current);
 			for(var i = 0; i < current.childNodes[0].childNodes.length; i++)
 			{
 				if(current.childNodes[0].childNodes[i].tagName == 'VIDEO'){
@@ -96,6 +96,7 @@ var chapters_btn = document.querySelector('.chapters');
 var stars = document.querySelectorAll('.star');
 
 var slides = document.querySelectorAll('.section');
+var body_c = document.querySelector('body');
 // var bars = document.querySelectorAll('.bar');
 // var timeline_items = document.querySelectorAll('.timeline-items');
 
@@ -107,6 +108,8 @@ for(var i = 0; i < stars.length; i++)
 		container.style.transform = 'translateY(-' + e.target.id * 100.2 + '%)';
 		cleanTimeline()
 		cleanActive()
+		var i = e.target.id + 1
+		body_c.classList = 'fp-viewing-' + i
 		slides[e.target.id].classList.add('active')
 		slides[e.target.id].classList.add('fp-completely')
 		this.style.boxShadow = '0 0 35px 21px rgba(255, 56, 56, 0.5)'
