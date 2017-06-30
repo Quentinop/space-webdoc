@@ -154,6 +154,7 @@ video::-webkit-media-controls
 
 .star
 {
+    cursor: pointer;
     width: 1.5rem;
     height: 1.5rem;
     background-color: #fff;
@@ -354,7 +355,7 @@ video::-webkit-media-controls
 }
 .chapter-container
 {
-    max-width: 80%;
+    max-width: 90%;
 }
 .chapter-container h1
 {

@@ -39,7 +39,7 @@ $(document).ready(function() {
 		verticalCentered: true,
 		sectionsColor : ['#ccc', '#fff'],
 		paddingTop: '0em',
-		paddingBottom: '10px',
+		paddingBottom: '0px',
 		fixedElements: '#header, .footer',
 		responsiveWidth: 0,
 		responsiveHeight: 0,

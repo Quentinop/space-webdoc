@@ -60,3 +60,17 @@ setTimeout(function(){
 	videoThree.play()
 }, 19000)
 
+
+var intro = document.querySelector('.full');
+var landing = document.querySelector('.landing');
+
+var skip = document.querySelector('.skip');
+
+skip.addEventListener('click', function(e) {
+	intro.style.opacity = 'none'
+	landing.style.display = 'block'
+});
+setTimeout(function(){
+	intro.style.display = 'none'
+	landing.style.display = 'block'
+}, 47000)
