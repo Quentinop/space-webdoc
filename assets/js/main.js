@@ -104,7 +104,7 @@ for(var i = 0; i < stars.length; i++)
 	stars[i].addEventListener('click', function(e)
 	{
 		console.log(e.target.id);
-		container.style.transform = 'translateY(-' + e.target.id * 100 + '%)';
+		container.style.transform = 'translateY(-' + e.target.id * 100.2 + '%)';
 		cleanTimeline()
 		cleanActive()
 		slides[e.target.id].classList.add('active')
