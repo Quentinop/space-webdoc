@@ -1,4 +1,4 @@
-$(document).ready(function() {
+/*$(document).ready(function() {
 	$('#fullpage').fullpage({
 //		//Navigation
 //		menu: '#menu',
@@ -76,3 +76,4 @@ $(document).ready(function() {
 		onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
 	});
 });
+*/

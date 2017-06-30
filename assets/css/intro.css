@@ -1,0 +1,677 @@
+body
+,html
+{
+	height: 100%;
+	margin: 0;
+	font-family: Helvetica;
+}
+
+.full{
+	height: 100%;
+	background-color: red;
+	position: relative;
+}
+
+.fs-video
+{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	background-size: 100% 100%;
+	background-color: black;
+	background-image: url(../video/sunrise.mp4);
+	background-position: center center;
+	background-size: contain;
+	object-fit: cover;
+	z-index: 3;
+}
+
+.fs-video-2
+{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	background-size: 100% 100%;
+	background-color: black;
+	background-image: url(../video/timelapse.mp4);
+	background-position: center center;
+	background-size: contain;
+	object-fit: cover;
+	z-index: 3;
+}
+
+.fs-video-3
+{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	background-size: 100% 100%;
+	background-color: black;
+	background-image: url(../video/journey.mp4);
+	background-position: center center;
+	background-size: contain;
+	object-fit: cover;
+	z-index: 3;
+}
+
+.slide-intro
+{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.left
+{
+	position: absolute;
+	z-index: 100;
+	color: #fefefe;
+	top: 10%;
+	left: 10%;
+	opacity: 0;
+	overflow: hidden;
+	animation: left-text-fade 8s ease-in 8.5;
+	animation-fill-mode: forwards; 
+	text-align: left;
+}
+
+.right
+{
+	opacity: 0;
+	overflow: hidden;
+	animation: right-text 0.8s ease-in 1s;
+	animation-fill-mode: forwards; 
+	text-align: right;
+}
+
+@keyframes left-text
+{
+	0%
+	{
+		clip-path: inset(0 100% 0 0);
+		opacity: 0;
+		transform: translateX(0px);
+	}
+	20%
+	{
+		clip-path: inset(0 0 0 0);
+		opacity: 1;
+		transform: translateX(10px);
+	}
+	100%
+	{
+		clip-path: inset(0 0 0 0);
+		opacity: 1;
+		transform: translateX(50px);
+	}
+}
+
+@keyframes left-text-fade
+{
+	0%
+	{		
+		opacity: 0.2;
+		transform: translateX(0px);
+	}
+	100%
+	{
+		opacity: 1;
+		transform: translateX(50px);
+	}
+}
+
+@keyframes right-text
+{
+	0%
+	{
+		clip-path: inset(0 0 0 100%);
+		opacity: 0;
+		transform: translateX(0px);
+	}
+	100%
+	{
+		clip-path: inset(0 0 0 0);
+		opacity: 1;
+		transform: translateX(-30px);
+	}
+}
+
+@keyframes rightImg
+{
+	0%
+	{
+		opacity: 0;
+		transform: translate(-50%, -50%) rotate(-37deg);
+	}
+	25%
+	{
+		opacity: 0.5;
+		transform: translate(-48.75%, -50%) rotate(-37deg);
+	}
+	100%
+	{
+		opacity: 0.8;
+		transform: translate(-45%, -55%) rotate(-37deg);
+	}
+}
+
+@keyframes slideOneBar
+{
+	0%
+	{
+		top: 100%;
+		transform: translate(-50%, 0%) rotate(0deg) scaleY(0.2);
+	}
+	33%
+	{
+		top: 50%;
+		transform: translate(-50%, -50%) rotate(0deg) scaleY(0.2);
+	}
+	66%
+	{
+		top: 50%;
+		transform: translate(-50%, -50%) rotate(-90deg) scaleY(0.2);
+	}
+	100%
+	{
+		top: 50%;
+		transform: translate(-50%, -50%) rotate(-90deg) scaleY(1);
+	}
+}
+
+@keyframes textFromBot
+{
+	0%
+	{
+		opacity: 0;
+		transform: translate(-50%, -120%);
+	}
+	10%
+	{
+		opacity: 1;
+		transform: translate(-55%, -124%);
+	}
+	100%
+	{
+		opacity: 1;
+		transform: translate(-100%, -160%);
+	}
+}
+
+@keyframes textFromTop
+{
+	0%
+	{
+		opacity: 0;
+		transform: translate(-50%, 40%);
+	}
+	10%
+	{
+		
+		opacity: 1;
+		transform: translate(-45%, 44%);
+	}
+	100%
+	{
+		opacity: 1;
+		transform: translate(-0%, 80%);
+	}
+}
+
+.intro-1 .text h1
+{
+	white-space: nowrap;
+}
+
+.intro-1 .text p
+{
+	white-space: nowrap;
+}
+
+.intro-1
+{
+	will-change: opacity;
+	background-color: green;
+	animation: fadeOut 1s ease-out 8s;
+	animation-fill-mode: forwards;
+	overflow: hidden;
+}
+
+.intro-1 .op-bg
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+.intro-1 .bar
+{
+	z-index: 10;
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	height: 800px;
+	width: 6px;
+	background-color: #fff;
+	animation: slideOneBar 1.5s ease-out 4s;
+	animation-fill-mode: forwards;
+	transform: translate(-50%, 0%) scaleY(0.5);
+	will-change: transform;
+}
+
+.intro-1 .up-text
+{
+	will-change: opacity, transform;
+	font-weight: bold;
+	font-size: 48px;
+	z-index: 10;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	color: #fff;
+	animation: textFromBot 8s linear 5.5s;
+	-webkit-animation-fill-mode: forwards;
+	-o-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+	opacity: 0;
+	transform: translate(-50%, -120%);
+}
+
+.intro-1 .bot-text
+{
+	will-change: opacity, transform;
+	font-size: 36px;
+	z-index: 10;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	color: #fff;
+	animation: textFromTop 8s linear 5.5s;
+	-webkit-animation-fill-mode: forwards;
+	-o-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+	opacity: 0;
+	transform: translate(-50%, 20%);
+}
+
+.intro-1 .bg
+{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.intro-1 .bg img
+{
+	will-change: transform, opacity;
+	width: 110%;
+	transform: translate(-5%, -5%);
+}
+
+.intro-1 .text
+{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	top: 0;
+	padding-left: 40px;
+	background-color: rgba(255, 255, 255, 0.3);
+}
+
+.intro-1 .title-text
+{
+	will-change: opacity, transform;
+	font-size: 56px;
+	z-index: 10;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 100%;
+	color: #fff;
+	transform: translate(-50%, -50%);
+}
+
+.intro-1 .title-text h1 {
+  animation: title-fade 1.5s ease-in 2s forwards;
+	font-size: 72px;
+  margin: 0;
+  position: relative;
+  text-align: center;
+}
+
+.intro-1 .title-text h1:before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 10px solid white;
+  box-sizing: border-box;
+}
+
+.intro-1 .title-text em {
+	display: inline-block;
+  font-family: Helvetica;
+  color: white;
+  position: relative;
+  font-style: normal!important;
+  width: 80px;
+  text-align: center;
+}
+.planet {
+  animation: planet-rotate 2.5s ease-in  1s forwards;
+}
+.planet:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: white;
+}
+
+.p-left {
+  transform-origin: 188px 50%;
+}
+.p-right {
+  transform-origin: -110px 49%;
+}
+
+@keyframes planet-rotate {
+  to
+  {
+		transform: rotate(360deg);
+  }
+}
+
+@keyframes title-fade {
+  to
+  {
+		opacity: 0;
+  }
+}
+
+/* 1s */
+.black-1
+{
+	will-change: opacity;
+	background-color: black;
+	animation: fadeOut 1s ease-in 8.5s;
+	animation-fill-mode: forwards;
+}
+/* 1.4s */
+
+.intro-2
+{
+	will-change: opacity;
+	animation: fadeOut 1s ease-out 18s;
+	animation-fill-mode: forwards;
+	overflow: hidden;
+}
+
+.intro-2 .op-bg
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+.i-t-two
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	font-size: 36px;
+	line-height: 52px;
+	width: 100%;
+	transform: translate(-50%, -50%) scale(0.8);
+	z-index: 15;
+	text-align: center;
+	color: white;
+	opacity: 0;
+	will-change: opacity, transform;
+}
+
+.intro-two-text-1 
+{
+	animation: fadeText 4s linear 9s forwards;
+}
+
+.intro-two-text-2
+{
+	animation: fadeText 4s linear 13.5s forwards;
+}
+
+
+@keyframes fadeText
+{
+	0%
+	{
+		opacity: 0;
+		transform: translate(-50%, -50%) scale(0.7);
+	}
+	40%
+	{
+		opacity: 1;
+		transform: translate(-50%, -50%) scale(0.8);
+	}
+	80%
+	{
+		opacity: 1;
+		transform: translate(-50%, -50%) scale(0.9);
+	}
+	100%
+	{
+		opacity: 0;
+		transform: translate(-50%, -50%) scale(1);
+	}
+}
+
+/* 5.4s */
+.black-2
+{
+	will-change: opacity;
+	background-color: black;
+	animation: fadeOut 1s ease-in 19s;
+	animation-fill-mode: forwards;
+}
+/* 5.8s */
+
+
+.intro-3
+{
+	will-change: opacity;
+	animation: fadeOut 1s ease-out 25s;
+	animation-fill-mode: forwards;
+	overflow: hidden;
+}
+
+.intro-3 .op-bg
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+.intro-3 > img
+{
+	position: absolute;
+	top: 100%;
+	left: 100%;
+	width: 90%;
+	animation: rotateImg 10s ease-in 16.5s;
+	animation-fill-mode: forwards;
+	transform: translate(-50%, -50%) rotate(17deg);
+	will-change: transform, opacity;
+}
+
+@keyframes rotateImg {
+  0%
+  {
+		transform: translate(-50%, -50%) rotate(17deg);
+  }
+
+  0%
+  {
+		transform: translate(-50%, -50%) rotate(-30deg);
+  }
+}
+
+.intro-three-text-1
+{
+	animation: fadeText 5s linear 20.5s forwards;
+}
+
+.intro-3 .text h2
+{
+	font-size: 36px;
+}
+
+.intro-3 .text p
+{
+	font-size: 28px;
+}
+
+@keyframes fromBot
+{
+	0%
+	{
+		transform: translate(0, 0);
+	}
+	100%
+	{
+		transform: translate(0, -80px);
+	}
+}
+
+.intro-3 .bg
+{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.intro-3 .bg img
+{
+	width: 110%;
+	transform: translate(-5%, -5%);
+}
+
+
+/* 9.3s */
+.black-3
+{
+	will-change: opacity;
+	background-color: black;
+	animation: fadeOut 1s ease-in 26s;
+	animation-fill-mode: forwards;
+}
+
+.intro-4
+{
+	will-change: opacity;
+	background-color: red;
+	animation: fadeOut 1s ease-out 46s;
+	animation-fill-mode: forwards;
+}
+
+.intro-4 .op-bg
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+.intro-four-text-1 
+{
+	animation: fadeText 4s linear 27s forwards;
+}
+
+.intro-four-text-2
+{
+	animation: fadeText 5s linear 31.5s forwards;
+}
+
+.intro-four-text-3
+{
+	animation: fadeText 5s linear 36s forwards;
+}
+
+.intro-four-text-4
+{
+	animation: fadeText 3s linear 41.5s forwards;
+}
+
+@keyframes fadeText
+{
+	0%
+	{
+		opacity: 0;
+		transform: translate(-50%, -50%) scale(0.7);
+	}
+	40%
+	{
+		opacity: 1;
+		transform: translate(-50%, -50%) scale(0.8);
+	}
+	80%
+	{
+		opacity: 1;
+		transform: translate(-50%, -50%) scale(0.9);
+	}
+	100%
+	{
+		opacity: 0;
+		transform: translate(-50%, -50%) scale(1);
+	}
+}
+
+.black-4
+{
+	will-change: opacity;
+	background-color: black;
+}
+
+@keyframes fadeOut 
+{
+	0%{opacity: 1}
+	100%{opacity: 0}
+}
