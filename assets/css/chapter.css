@@ -1,3 +1,25 @@
+/* animation */
+
+.animation
+{
+    width : 100vw;
+    height : 100vh;
+    background-color: #0C0E37;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    transform: scale(0);
+    animation: animation-start ease-in-out 0.8s 1;
+    transform-origin: top right;
+}
+@keyframes animation-start
+{
+    from { transform: scaleX(1); }
+    to { transform: scaleX(0); }
+}
+
+
 /* IMPORT FACES */
 
 @font-face
