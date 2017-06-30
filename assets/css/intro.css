@@ -1,3 +1,31 @@
+/* IMPORT FACES */
+
+@font-face
+{
+  font-family: "Interstate";
+  src: url("../fonts/Interstate-Regular.otf");
+  font-weight: 400;
+}
+@font-face
+{
+  font-family: "Interstate";
+  src: url("../fonts/Interstate-ExLight.otf");
+  font-weight: 100;
+}
+@font-face
+{
+  font-family: "Interstate";
+  src: url("../fonts/Interstate-Light.otf");
+  font-weight: 300;
+}
+@font-face
+{
+  font-family: "Interstate";
+  src: url("../fonts/Interstate-Bold.otf");
+  font-weight: 600;
+}
+html { font-size: 62.5% ;}
+
 body
 ,html
 {
@@ -5,6 +33,9 @@ body
 	margin: 0;
 	font-family: Helvetica;
 	position: relative;
+	font-family: "Interstate";
+	font-weight: 300;
+	font-size: 1.4rem;
 }
 
 .full{
@@ -13,7 +44,7 @@ body
 	transition: all 1.5s ease-out;
 }
 
-.fs-video
+.fs-video, .fs-video-2, .fs-video-3
 {
 	position: absolute;
 	right: 0;
@@ -24,47 +55,26 @@ body
 	height: 100%;
 	background-size: 100% 100%;
 	background-color: black;
-	background-image: url(../video/sunrise.mp4);
 	background-position: center center;
 	background-size: contain;
-	object-fit: cover;
 	z-index: 3;
+	object-fit: cover;
+}
+
+.fs-video
+{
+	background-image: url(../video/sunrise.mp4);
+
 }
 
 .fs-video-2
 {
-	position: absolute;
-	right: 0;
-	bottom: 0;
-	top: 0;
-	right: 0;
-	width: 100%;
-	height: 100%;
-	background-size: 100% 100%;
-	background-color: black;
 	background-image: url(../video/timelapse.mp4);
-	background-position: center center;
-	background-size: contain;
-	object-fit: cover;
-	z-index: 3;
 }
 
 .fs-video-3
 {
-	position: absolute;
-	right: 0;
-	bottom: 0;
-	top: 0;
-	right: 0;
-	width: 100%;
-	height: 100%;
-	background-size: 100% 100%;
-	background-color: black;
 	background-image: url(../video/journey.mp4);
-	background-position: center center;
-	background-size: contain;
-	object-fit: cover;
-	z-index: 3;
 }
 
 .slide-intro
@@ -84,7 +94,7 @@ body
 	opacity: 0;
 	overflow: hidden;
 	animation: left-text-fade 8s ease-in 8.5;
-	animation-fill-mode: forwards; 
+	animation-fill-mode: forwards;
 	text-align: left;
 }
 
@@ -93,7 +103,7 @@ body
 	opacity: 0;
 	overflow: hidden;
 	animation: right-text 0.8s ease-in 1s;
-	animation-fill-mode: forwards; 
+	animation-fill-mode: forwards;
 	text-align: right;
 }
 
@@ -122,7 +132,7 @@ body
 @keyframes left-text-fade
 {
 	0%
-	{		
+	{
 		opacity: 0.2;
 		transform: translateX(0px);
 	}
@@ -220,7 +230,7 @@ body
 	}
 	10%
 	{
-		
+
 		opacity: 1;
 		transform: translate(-45%, 44%);
 	}
@@ -387,12 +397,12 @@ body
 .planet:before {
 	content: "";
 	position: absolute;
-	top: 50%;
-	left: 50%;
+	top: 47%;
+	left: 45%;
 	z-index: -1;
 	transform: translate(-50%, -50%);
-	width: 60px;
-	height: 60px;
+	width: 62px;
+	height: 62px;
 	border-radius: 50%;
 	background: white;
 }
@@ -454,7 +464,7 @@ body
 	left: 50%;
 	font-size: 36px;
 	line-height: 52px;
-	width: 100%;
+	width: 60%;
 	transform: translate(-50%, -50%) scale(0.8);
 	z-index: 15;
 	text-align: center;
@@ -463,7 +473,7 @@ body
 	will-change: opacity, transform;
 }
 
-.intro-two-text-1 
+.intro-two-text-1
 {
 	animation: fadeText 4s linear 9s forwards;
 }
@@ -621,7 +631,7 @@ body
 	background-color: rgba(0, 0, 0, 0.2);
 }
 
-.intro-four-text-1 
+.intro-four-text-1
 {
 	animation: fadeText 4s linear 27s forwards;
 }
@@ -673,7 +683,7 @@ body
 	animation-fill-mode: forwards;
 }
 
-@keyframes fadeOut 
+@keyframes fadeOut
 {
 	0%{opacity: 1}
 	100%{opacity: 0}
@@ -687,20 +697,19 @@ body
 	height: 100%;
 	width: 100%;
 	display: none;
-	background-color: black;
+	background-color: #0C0E37;
 	transition: 0.5s all ease-out;
 }
 
 .landing .chapter-container h1
 {
 	font-size: 72px;
-	letter-spacing: 20px;
-	margin-bottom: 40px;
+	letter-spacing: 10px;
 }
-
-.landing .chapter-container h2
+.landing .chapter-container p
 {
-	font-size: 42px;
+	font-size: 25px;
+    font-weight: 600;
 }
 
 .skip
@@ -719,7 +728,7 @@ body
 .bbg
 {
 	top: 0;
-	left: 0;	
+	left: 0;
 	z-index: -10;
 	position: absolute;
 	width: 100%;
@@ -727,32 +736,18 @@ body
 	background-color: black;
 }
 
-.landing .button-outline
+.landing-bg
 {
-	
-	font-size: 22px;
-	margin: 0 auto;
-	border: 1px solid #fff;
-	width: 17rem;
-	height: 5rem;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	margin-top: 10rem;
-	transition: all ease-in-out 0.3s;
+	width: 100vw;
+	height: 100vh;
+	background-image: linear-gradient( rgba(12, 14, 55, 0.66), rgba(12, 14, 55, 0.66) ), url('../img/wallpaper.jpg');
 }
-.landing .button-outline a
+.button-outline
 {
-	font-weight: 600;
-	color: #fff;
-	text-decoration: none;
+	width: 8rem;
+    height: 2.2rem;
 }
-.landing .button-outline:hover
+.button-outline a
 {
-	transition: all ease-in-out 0.3s;
-	background-color: #fff;
-}
-.landing .button-outline:hover a
-{
-	color: #0C0E37;
+	font-size: 0.8rem;
 }
