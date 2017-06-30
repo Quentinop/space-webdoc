@@ -169,7 +169,7 @@ setTimeout(function()
 	slide_1 = true
 }, 8500)
 
-window.addEventListener('mousemove', function(e) 
+/*window.addEventListener('mousemove', function(e) 
 {
 	var x = e.clientX
 	var y = e.clientY
@@ -197,7 +197,7 @@ function parallax(yr, xr, or)
 
 	bg.style.transform = 'translate(' + invert_xr + '%,' + invert_yr + '%)'
 	bg.style.opacity = opacity
-}
+}*/
 
 var audio = document.querySelector('.start-audio');
 var videoOne = document.querySelector('.start-video');
