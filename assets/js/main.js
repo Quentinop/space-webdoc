@@ -179,3 +179,47 @@ function cleanActive()
 	}
 
 }
+
+
+// PARALLAX
+
+
+var w = window.innerWidth
+var h = window.innerHeight
+var xm = w / 2
+var ym = h / 2
+var slide_1 = false
+
+window.addEventListener('mousemove', function(e) 
+{
+	var x = e.clientX
+	var y = e.clientY
+	makeRatio(x, y)
+
+});
+
+function makeRatio(x, y)
+{
+	var xr = x * 2 / w - 1
+	var yr = y * 2 / h - 1
+	var or = y * 0.5 / h
+	parallax(yr, xr, or)
+}
+
+var bg = document.querySelector('.stars-bg');
+var obj = document.querySelectorAll('.parallax-object');
+
+function parallax(yr, xr, or)
+{
+	var invert_xr = xr - (xr * 2)
+	var invert_yr = yr - (yr * 2)
+	var opacity = 1 - or
+	opacity.toString()
+
+	bg.style.transform = 'translate(' + invert_xr + '%,' + invert_yr + '%)'
+	bg.style.opacity = opacity
+	for(var i = 0; i < obj.length; i++)
+	{
+		obj[i].style.transform = 'translate(' + xr + '%,' + yr + '%)'
+	}
+}

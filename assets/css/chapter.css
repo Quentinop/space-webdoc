@@ -468,6 +468,20 @@ video::-webkit-media-controls
 
 /* SPECIFIC SECTIONS */
 
+.stars-bg
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.stars-bg img
+{
+    will-change: transform, opacity;
+    width: 110%;
+    transform: translate(-5%, -5%);
+}
+
 .chapter-1 .section-4 .text-container
 {
     z-index: 1;
@@ -478,6 +492,12 @@ video::-webkit-media-controls
     height: 125%;
     top: 25%;
     left: 90%;
+}
+
+.chapter-1 .section-5
+{
+    position: relative;
+    background-color: black;
 }
 .chapter-1 .section-6 video
 {
