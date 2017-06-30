@@ -1,3 +1,5 @@
+var muted = false;
+
 $(document).ready(function() {
 	$('#fullpage').fullpage({
 
@@ -54,8 +56,27 @@ $(document).ready(function() {
 		lazyLoading: true,
 
 		//events
-		onLeave: function(index, nextIndex, direction){},
-		afterLoad: function(anchorLink, index){},
+		onLeave: function(index, nextIndex, direction){
+			muted = false
+		},
+		afterLoad: function(anchorLink, index){
+			var audio = document.querySelector('.ambient-audio');
+			var current_index = 'section-' + index.toString()
+			var current = document.querySelector('.' + current_index.toString());
+
+			for(var i = 0; i < current.childNodes[0].childNodes.length; i++)
+			{
+				if(current.childNodes[0].childNodes[i].tagName == 'VIDEO'){
+					muted = true
+					audio.pause()
+				}
+				if(muted == false && i == current.childNodes[0].childNodes.length-1)
+				{
+					audio.play()
+				}
+			}
+
+		},
 		afterRender: function(){},
 		afterResize: function(){},
 		afterResponsive: function(isResponsive){},
@@ -155,12 +176,3 @@ function cleanActive()
 	}
 
 }
-/*
-var audio_btn = document.querySelector('.mute-button')
-var ambient = document.querySelector('audio')
-
-audio_btn.addEventListener('click', function(e) {
-	ambient.pause()
-	console.log(ambient);
-});*/
-
