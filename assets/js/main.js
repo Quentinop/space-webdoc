@@ -155,3 +155,11 @@ function cleanActive()
 	}
 
 }
+/*
+var audio_btn = document.querySelector('.mute-button')
+var ambient = document.querySelector('audio')
+
+audio_btn.addEventListener('click', function(e) {
+	ambient.pause()
+	console.log(ambient);
+});*/
